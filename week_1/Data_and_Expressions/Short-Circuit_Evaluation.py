@@ -13,3 +13,8 @@ def crash():
 print(no() and crash())
 print(crash() and no())
 print(yes() and crash())
+
+
+print(yes() or crash())
+print(crash() or yes())
+print(no() or crash())
