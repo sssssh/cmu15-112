@@ -15,3 +15,17 @@ def sum_To_N(n):
 
 
 print(sumToN(5) == sum_To_N(5) == 1+2+3+4+5)
+
+
+def buggySumToN(n):
+    # note: this not only uses a "while" instead of a "for" loop,
+    # but it also contains a bug. Ugh.
+    total = 0
+    counter = 0
+    while (counter <= n):
+        counter += 1
+        total += counter  # bug is here!
+    return total
+
+
+print(buggySumToN(5) == 1+2+3+4+5)
