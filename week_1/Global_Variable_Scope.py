@@ -13,3 +13,16 @@ def f(x):
 print(f(5))
 print(f(6))
 print(g)
+
+
+def f(x):
+    # if we modify a global variable, we must declare it as global
+    # otherwise, python will assume it is a local variable
+    global g
+    g += 1
+    return x + g
+
+
+print(f(5))
+print(f(6))
+print(g)
