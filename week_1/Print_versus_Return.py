@@ -12,5 +12,6 @@ def cubed(x):
     return (x ** 3)
 
 
-cubed(4)  # noting
-print(cubed(2))  # 8
+cubed(4)  # noting (seems to be ignored why?)
+print(cubed(2))  # works 8
+print(2 * cubed(4))  # works!
