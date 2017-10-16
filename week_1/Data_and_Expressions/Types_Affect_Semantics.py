@@ -1,0 +1,5 @@
+print(3 * 2)
+print(3 * "abc")
+print(3 + 2)
+print("abc" + "def")
+print(3 + "def")
