@@ -24,3 +24,17 @@ print("But after a[0] = 42")
 print("   a =", a)
 print("   b =", b)
 print("   c =", c)
+
+
+# deepcopy
+a = [2, 3]
+b = copy.copy(a)
+c = a[:]
+d = a + []
+e = list(a)
+f = copy.deepcopy(a)
+g = sorted(a)
+
+
+a[0] = 42
+print(a, b, c, d, e, f, g)
